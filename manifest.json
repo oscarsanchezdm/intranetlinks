@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Intranet link fixer",
+  "version": "1.0",
+
+  "description": "Una extensió que permet accedir als recursos de l'Intranet des de fora de la xarxa interna, redirigint les peticions de http://tmbnet a https://intranet.tmb.cat/",
+
+  "icons": {
+    "48": "icons/intranetfixer.svg",
+    "96": "icons/intranetfixer.svg"
+  },
+    
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "http://tmbnet/*"
+  ]
+}
